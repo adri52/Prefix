@@ -3,8 +3,14 @@ public class Main {
         Prefix prefix = new Prefix();
         System.out.println(prefix.getExpr());
 
-        System.out.println(prefix.getResult());
+        String expr = "* + 3 12 - 9 7";
+        prefix.pre(0);
         System.out.println(prefix.getIndex());
+        System.out.println(prefix.getResult());
+
+
+        //System.out.println(prefix.getIndex());
 
     }
+
 }
