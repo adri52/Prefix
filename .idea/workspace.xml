@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6568d2f1-df0a-4535-b0ce-4b17df7ce234" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prefix3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prefix3/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prefix3/Prefix$Help.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prefix3/Prefix$Help.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Prefix3/Prefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prefix3/Prefix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Prefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prefix.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,21 +71,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Prefix.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

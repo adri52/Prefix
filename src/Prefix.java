@@ -22,16 +22,7 @@ public class Prefix {
             op = expr.charAt(start);
             x = Character.getNumericValue(expr.charAt(start + 2));
             y = Character.getNumericValue(expr.charAt(start + 4));
-
-            if(op == '+')
-                type.result = x + y;
-            else if(op == '-')
-                type.result = x - y;
-            else if(op == '*')
-                type.result = x * y;
-            else if(op == '/')
-                type.result = x / y;
-
+            type.result = evaluate(op,x,y);
             type.index = start;
             return type;
         } else {
@@ -39,6 +30,21 @@ public class Prefix {
             Help endSec = pre(endFirst.index + 2);
             return endSec;
         }
+    }
+
+
+    public int evaluate(char op, int x, int y){
+        int result = 0;
+
+        if(op == '+')
+            result = x + y;
+        else if(op == '-')
+            result = x - y;
+        else if(op == '*')
+            result = x * y;
+        else if(op == '/')
+            result = x / y;
+        return result;
     }
 
     public void changeExpr(String newExpr){
