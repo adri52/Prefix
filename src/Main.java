@@ -1,15 +1,20 @@
 public class Main {
-    public static void main(String[] args){
-        Prefix prefix = new Prefix();
-        System.out.println(prefix.getExpr());
 
-        String expr = "* + 3 12 - 9 7";
-        prefix.pre(0);
-        System.out.println(prefix.getIndex());
-        System.out.println(prefix.getResult());
+    public static void main(String[] args) {
+        // write your code here
+        Prefix prefix1  = new Prefix();
+
+        prefix1.changeExpr("/ + 170 10 - 90 60");
+
+        int start  = prefix1.getStart();
+        int stop  = prefix1.getStop();
+
+        int result = prefix1.Pre(start,stop).answ;
+        System.out.println(result);
 
 
-        //System.out.println(prefix.getIndex());
+
+
 
     }
 

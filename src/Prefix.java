@@ -1,39 +1,66 @@
+import java.util.Stack;
+
 public class Prefix {
     private String expr = "* + 3 2 - 9 7";
 
 
-    private class Help {
-        int result;
+
+
+    public class Result {
+        int answ;
         int index;
 
-        Help(){
-            result =0;
+        public Result(){
+            answ =0;
             index = expr.indexOf(expr);
+        }
+
+        public int getAnsw() {
+            return answ;
+        }
+
+        public int getIndex() {
+            return index;
         }
     }
 
-    private Help type = new Help();
+
+    public Result Pre(int start, int stop){
 
 
-    public Help pre(int start) {
-        char op;
-        int x, y;
-        if (expr.charAt(start) < 48 && expr.charAt(start + 2) >= 48) {
-            op = expr.charAt(start);
-            x = Character.getNumericValue(expr.charAt(start + 2));
-            y = Character.getNumericValue(expr.charAt(start + 4));
-            type.result = evaluate(op,x,y);
-            type.index = start;
-            return type;
-        } else {
-            Help endFirst = pre(start + 2);
-            Help endSec = pre(endFirst.index + 2);
-            return endSec;
+        char c = expr.charAt(start);
+
+        Result preFinal = new Result();
+
+        Result ex1 = new Result();
+
+        Result ex2 = new Result();
+
+        if(c >= 48){
+            int temp = start;
+            while(expr.charAt(temp)!= 32)
+                temp++;
+
+            preFinal.index = temp;
+            preFinal.answ = Integer.valueOf(expr.substring(start, temp));
+            return preFinal;
         }
+        else {
+            ex1 = Pre(start + 2, stop);
+            ex2 = Pre(ex1.index + 1, stop);
+
+            preFinal.index = ex2.index;
+            preFinal.answ = evaluate(c, ex1.answ, ex2.answ);
+        }
+
+        return preFinal;
+
     }
 
 
     public int evaluate(char op, int x, int y){
+
+
         int result = 0;
 
         if(op == '+')
@@ -47,7 +74,10 @@ public class Prefix {
         return result;
     }
 
+
+
     public void changeExpr(String newExpr){
+        newExpr = newExpr + " ";
         expr = newExpr;
     }
 
@@ -55,13 +85,9 @@ public class Prefix {
         return expr;
     }
 
-    public int getResult(){
-        return type.result;
+    public int getStart(){
+        return expr.indexOf(expr.charAt(0));
     }
-
-    public int getIndex(){
-        return type.index;
-    }
-
     public int getStop(){ return expr.length() -1; }
+
 }

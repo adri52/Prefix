@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6568d2f1-df0a-4535-b0ce-4b17df7ce234" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prefix3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prefix3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prefix3/Prefix$Help.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prefix3/Prefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Prefix3/Prefix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Prefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prefix.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +28,7 @@
   <component name="ProjectId" id="1SB0Pc1cHaTBMctn0O6nOO6oCIh" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
   <component name="RunDashboard">
