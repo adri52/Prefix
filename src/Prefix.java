@@ -1,11 +1,13 @@
 import java.util.Stack;
 
+
+//Wre create the prefix class
 public class Prefix {
     private String expr = "* + 3 2 - 9 7";
 
 
-
-
+    //This class we have it and it will hold all the different
+    //answers and index the prefix will fo trough to get solved
     public class Result {
         int answ;
         int index;
@@ -14,17 +16,11 @@ public class Prefix {
             answ =0;
             index = expr.indexOf(expr);
         }
-
-        public int getAnsw() {
-            return answ;
-        }
-
-        public int getIndex() {
-            return index;
-        }
     }
 
 
+
+    //This a the function that will recurs and basically solve the prefix expression
     public Result Pre(int start, int stop){
 
 
@@ -57,8 +53,9 @@ public class Prefix {
 
     }
 
-
-    public int evaluate(char op, int x, int y){
+    //This function will recive an character (which will ba an operator) and then compare to wich operatio it fits
+    //and then operate the two values.
+    private int evaluate(char op, int x, int y){
 
 
         int result = 0;
@@ -75,7 +72,7 @@ public class Prefix {
     }
 
 
-
+    //This is for the menu, which will allow to change the expression that is alreeady implemented in the prefix class.
     public void changeExpr(String newExpr){
         newExpr = newExpr + " ";
         expr = newExpr;
@@ -84,7 +81,6 @@ public class Prefix {
     public String getExpr(){
         return expr;
     }
-
     public int getStart(){
         return expr.indexOf(expr.charAt(0));
     }
